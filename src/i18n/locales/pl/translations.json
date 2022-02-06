@@ -1,0 +1,147 @@
+{
+    "shared": {
+        "newPost": "Nowy post",
+        "newJourney": "Nowa podróż",
+        "newExp": "Nowa recenzja",
+        "search": "Szukaj...",
+        "journey": "Podróż",
+        "post": "Post",
+        "exp": "Recenzja",
+        "exp2":"Recenzję",
+        "edit": "Edytuj",
+        "delete": "Usuń",
+        "addToFavs": "Dodaj do ulubionych",
+        "removeFromFavs": "Usuń z ulubionych",
+        "deleteMsg": "Udało się usunąć wpis!",
+        "postedBy": "Autor: ",
+        "login": "Zaloguj się",
+        "register": "Zarejestruj się",
+        "cancel":"Anuluj",
+        "accept":"Akceptuj",
+        "notLoggedIn":"Najpierw musisz się zalogować.",
+        "select":"Wybierz",
+        "selected":"Wybrano"
+    },
+    "home": {
+        "title1": "Nowe podróże",
+        "subtitle1": "Podróże opublikowane przez naszych członków",
+        "title2": "Nowe posty",
+        "subtitle2": "Posty opublikowane przez naszych członków",
+        "title3": "Nowe recenzje",
+        "subtitle3": "Recenzje opublikowane przez naszych członków",
+        "search": "Szukaj podróży..."
+    },
+    "nav": {
+        "welcome": "Witaj, {{userName}}!",
+        "home": "Strona główna",
+        "logout": "Wyloguj się",
+        "userPage": "Strona użytkownika",
+        "editProfile": "Edytuj profil",
+        "addNew": "Dodaj"
+    },
+    "user": {
+        "fab-tooltip": "Powrót do nawigacji",
+        "edit-profile-tooltip": "Edytuj profil",
+        "user-panel-title": "Autorem bloga jest ",
+        "journeys": "Podróże",
+        "posts": "Posty",
+        "exps": "Recenzje",
+        "latest": "Najnowsze",
+        "favs": "Ulubione",
+        "users": "Użytkownicy",
+        "edit-blog": "Edytuj blog",
+        "noItems":"Nie ma jeszcze wpisów."
+    },
+    "card": {
+        "partOf": "Podróż:",
+        "author": "Autor:",
+        "details": "Szczegóły",
+        "user": "Użytkownik",
+        "added": "dodany"
+    },
+    "modal": {
+        "deleteItemTitle": "Wpis zostanie usunięty!",
+        "deleteItemText": "Tej operacji nie można cofnąć. Czy chcesz kontynuować?",
+        "deleteJourneyTitle": "Podróż zostanie usunięta!",
+        "deleteJourneyText": "Wszystkie wpisy wchodzące w skład tej podróży zostaną usunięte! Tej operacji nie można cofnąć. Czy chcesz kontynuować?",
+        "deleteAccountTitle":"Konto zostanie usunięte",
+        "deleteAccountText":"Wszystkie twoje wpisy zostaną usunięte!!! Czy chcesz kontynuować ",
+        "inputPassword":"Wpisz hasło aby potwierdzić.",
+        "deleteSuccess":"Wpis został usunięty."
+    },
+    "journey": {
+        "addNextPost": "Dodaj kolejny post",
+        "addNextExp": "Dodaj kolejną recenzję"
+    },
+    "categories": {
+        "nature": "Przyroda",
+        "food": "Restauracja",
+        "museum": "Muzeum",
+        "landmark": "Architektura",
+        "event": "Wydarzenie",
+        "accomodation": "Hotel"
+    },
+    "auth": {
+        "login": "Login",
+        "password": "Hasło",
+        "loginMsg": "Udało się zalogować!",
+        "registerMsg":"Udało się zarejestrować!",
+        "usernameRequired": "Wprowadź login.",
+        "usernameMin": "Login musi mieć przynajmniej 3 znaki.",
+        "passwordRequired": "Wprowadź hasło.",
+        "emailRequired": "Wprowadź email.",
+        "emailCorrect": "Wprowadź poprawny email.",
+        "passwordMin": "Hasło musi mieć przynajmniej 6 znaków.",
+        "loginTitle":"Logowanie",
+        "registerTitle":"Rejestracja"
+    },
+    "profile":{
+        "profileTitle":"Moje konto",
+        "changePhoto":"Zmień zdjęcie użytkownika",
+        "deleteAccount":"Usuń konto",
+        "saveChanges":"Zapisz zmiany",
+        "unableToLoad":"Nie można załadować danych."
+    },
+    "add":{
+        "editPost":"Edytuj post",
+        "editJourney":"Edytuj podróż",
+        "editExp":"Edytuj recenzję",
+        "addExp":"Dodaj recenzję do",
+        "addPost":"Dodaj post do",
+        "title":"Tytuł",
+        "content":"Treść",
+        "location":"Lokalizacja",
+        "when":"Kiedy",
+        "rating":"Ocena",
+        "category":"Kategoria",
+        "selectCategory":"Wybierz kategorię...",
+        "selectJourney":"Wybierz podróż...",
+        "submit":"Wyślij",
+        "titleRequired":"Wprowadź tytuł.",
+        "titleMin":"Tytuł musi mieć co najmniej 3 znaki.",
+        "contentRequired":"Wprowadź treść.",
+        "descriptionRequired":"Wprowadź opis.",
+        "description":"Opis",
+        "noCoords":"Brak współrzędnych.",
+        "pickLocation":"Wybierz lokalizację na mapie",
+        "clearCoords":"Usuń współrzędne"
+    },
+    "image":{
+        "upload":"Z dysku",
+        "web":"Z sieci",
+        "pickImg":"Wybierz zdjęcie",
+        "clearImg":"Usuń zdjęcie",
+        "noImg":"Brak zdjęcia",
+        "uploadTooltip":"Załaduj zdjęcie z dysku",
+        "findWebTooltip":"Znajdź darmowe zdjęcie"
+    },
+    "search":{
+        "placeholder":"Wpisz zapytanie...",
+        "results":"Wyniki dla: ",
+        "noResults":"Brak {{type}} dla: ",
+        "noJourneys":"podróży",
+        "noPosts":"postów",
+        "noExps":"recenzji",
+        "by":"napisał"
+    }
+}

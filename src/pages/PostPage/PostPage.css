@@ -1,0 +1,19 @@
+.post-page__title {
+    font-size: 72px;
+    z-index: 2;
+
+  }
+
+  @media (max-width: 1200px) {
+    .post-page__title {
+      font-size: 6vw;
+      position: static;
+    }}
+
+    @media (max-width: 900px) {
+        .post-page__title {
+          font-size: 36px;
+          position: static;
+        }
+      }
+      

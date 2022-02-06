@@ -1,0 +1,15 @@
+.map-container {
+  height: 600px;
+}
+
+
+.popup-link {
+  font-weight: bold;
+  color: var(--clr-font);
+  font-size: 16px;
+}
+
+.popup-link:hover {
+  color: var(--clr-font-2);
+}
+

@@ -1,0 +1,57 @@
+.image-upload.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-upload__preview-square {
+  width:100%;
+  max-width: 400px;
+  min-height: 6rem;
+  border: 1px solid #ccc;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  border-radius: 0.1rem;
+}
+
+.image-upload__preview-round {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #ccc;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-upload img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-upload__preview-square button{
+position: absolute;
+z-index: 99;
+right: 5%;
+top:5%;
+}
+
+.image-upload__preview-round button{
+  position: absolute;
+  z-index: 99;
+  right: 15%;
+  bottom:15%;
+  }

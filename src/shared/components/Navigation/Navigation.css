@@ -1,0 +1,64 @@
+.logo {
+  font-family: var(--ff-secondary);
+  font-size: 24px;
+}
+
+.offcanvas-nav {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+
+
+.navbar-toggler{
+  box-shadow: none!important;
+
+}
+
+.dropdown-toggle.nav-link {
+  padding-left: 0 !important;
+}
+
+.dropdown-toggle:focus {
+  box-shadow: none!important;
+}
+
+.nav-dropdown .nav-link {
+  padding-left: 1.5rem;
+}
+
+
+.nav-link, .nav-link:focus{
+  color: var(--clr-font);
+}
+.nav-link:hover {
+  color: var(--clr-accent-2)
+}
+.offcanvas-nav span:hover{
+  color: var(--clr-accent-2)
+
+}
+
+.toggle-icon{
+  color: var(--clr-font-2);
+  opacity:1;
+  font-size: 36px;
+}
+
+.toggle-icon:hover{
+  color: var(--clr-font);
+}
+
+
+
+@media (max-width: 1024px) {
+  .login-buttons {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .greeting {
+    display: none;
+  }
+}

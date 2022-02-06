@@ -1,0 +1,56 @@
+.journey-page__title {
+  font-size: 90px;
+  z-index: 2;
+  bottom: 50px;
+  left: 0;
+}
+
+@media (max-width: 1200px) {
+  .journey-page__title {
+    font-size: 7vw;
+    position: static;
+  }
+
+  .journey-page__author-note {
+    font-size: 24px;
+  }
+
+  .journey-page__intro {
+    font-size: 18px;
+  }
+}
+
+.journey-page__location-link {
+  cursor: pointer;
+}
+
+.journey-page__location-link:hover {
+  cursor: pointer;
+  color: var(--clr-font);
+}
+
+.dropdown {
+  top: 0;
+  right: 0;
+ 
+}
+
+.dropdown-menu{
+  max-width: 90vh;
+  overflow: auto;
+
+}
+
+.dropdown-btn{
+  transform: translate(-100%, 0);
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .journey-page__title {
+    font-size: 56px;
+    position: static;
+  }
+}

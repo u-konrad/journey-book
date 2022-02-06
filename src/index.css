@@ -1,0 +1,148 @@
+
+@font-face {
+  font-family: "poppins";
+  src: url("./fonts/Poppins-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./fonts/Poppins-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  /* --clr-bg: #f3f2ef; */
+  --clr-bg: #f6f6f6;
+  --clr-bg-2: ghostwhite;
+  --clr-card-bg:white;
+  --clr-footer: gainsboro;
+  --clr-accent: #afb6a9;
+  --clr-accent-dark: #91948e;
+  --clr-accent-2: darkgoldenrod;
+  --clr-accent-2-dark: #8b6401;
+  --clr-font: black;
+  --clr-font-2: rgb(78, 78, 78);
+  --height-footer:56px;
+  --ff-primary: 'poppins',-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  --ff-secondary: "poppins", "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-primary);
+  color: var(--clr-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+strong {
+  font-family: var(--ff-secondary);
+  font-weight: bold;
+}
+
+a,
+a:hover,
+a:focus,
+a:focus-visible {
+  color: var(--clr-font);
+  outline: none;
+  text-decoration: none;
+}
+
+.bg-basic {
+  background-color: var(--clr-bg);
+}
+
+.card-link {
+  font-weight: bold;
+  color: var(--clr-font-2);
+}
+
+.card-link:hover {
+  color: var(--clr-font);
+}
+
+.text-muted{
+  /* color:var(--clr-font-2) */
+}
+
+.MuiFab-root{
+  background-color: ghostwhite!important;
+}
+
+.MuiFab-root:hover{
+  background-color: gainsboro!important;
+
+}
+
+.btn-add-j{
+}
+
+.btn-add-p{
+}
+
+.btn-add-e{
+  color: #8b6401;
+  border-color:darkgoldenrod ;
+}
+.btn-add-e:hover{
+  background-color: darkgoldenrod;
+  border-color:darkgoldenrod ;
+  color: white;
+
+}
+
+.not-found-page{
+height: calc(100vh - 62px - var(--height-footer));
+}
+
+.not-found-page h1{
+  font-size: 120px;
+}
+
+footer{
+  background-color: var(--clr-footer);
+  height: var(--height-footer);
+  color: dimgray;
+   position: absolute;
+   bottom: 0;
+   left:0;
+   width:100vw;
+}
+
+.lang-container{
+  width:80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-lang{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,29 @@
+
+.check-btn .btn-outline-primary:hover {
+  background-color: #61a0ffd2;
+}
+
+.search-item-card .card-pic{
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.search-item-card:hover{
+background-color: var(--clr-bg-2);
+}
+
+@media (max-width:992px){
+    .search-item-card .card-pic{
+        width: 100px;
+        height: 100px;
+    }
+
+    .search-item-card.card-title{
+        font-size: 16px;
+    }
+
+    .search-item-card .card-text{
+        font-size: 14px;
+    }
+}

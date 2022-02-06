@@ -1,0 +1,147 @@
+{
+    "shared": {
+        "newPost": "New post",
+        "newJourney": "New journey",
+        "newExp": "New experience",
+        "search": "Search...",
+        "journey": "Journey",
+        "post": "Post",
+        "exp": "Experience",
+        "exp2": "Experience",
+        "edit": "Edit",
+        "delete": "Delete",
+        "addToFavs": "Add to favorites",
+        "removeFromFavs": "Remove from favorites",
+        "deleteMsg": "Item deleted.",
+        "postedBy": "Posted by ",
+        "login": "Login",
+        "register": "Register",
+        "cancel": "Cancel",
+        "accept": "Accept",
+        "notLoggedIn": "You have to log in first.",
+        "select": "Select",
+        "selected": "Selected"
+    },
+    "home": {
+        "title1": "New journeys",
+        "subtitle1": "Latest journeys published by members",
+        "title2": "New posts",
+        "subtitle2": "Latest posts published by members",
+        "title3": "New experiences",
+        "subtitle3": "Latest experiences published by members",
+        "search": "Search journeys..."
+    },
+    "nav": {
+        "welcome": "Hello, {{userName}}!",
+        "home": "Home",
+        "logout": "Logout",
+        "userPage": "User page",
+        "editProfile": "Edit profile",
+        "addNew": "Add new"
+    },
+    "user": {
+        "fab-tooltip": "Return to top",
+        "edit-profile-tooltip": "Edit profile",
+        "user-panel-title": "Blog created by ",
+        "journeys": "Journeys",
+        "posts": "Posts",
+        "exps": "Experiences",
+        "latest": "Latest",
+        "favs": "Favorites",
+        "users": "Users",
+        "edit-blog": "Edit blog",
+        "noItems": "No items yet."
+    },
+    "card": {
+        "partOf": "Journey:",
+        "author": "Posted by",
+        "details": "Details",
+        "user": "User",
+        "added": "added"
+    },
+    "modal": {
+        "deleteItemTitle": "Item will be deleted!",
+        "deleteItemText": "This cannot be reversed. Do you want to continue?",
+        "deleteJourneyTitle": "Journey will be deleted!",
+        "deleteJourneyText": "All posts included in this journey will be deleted! Do you want to continue?",
+        "deleteAccountTitle": "User account will be deleted!",
+        "deleteAccountText": "All your contributions will be deleted!!! Are you sure you want to continue? ",
+        "inputPassword": "Enter your password to confirm.",
+        "deleteSuccess": "Item deleted."
+    },
+    "journey": {
+        "addNextPost": "Add next post",
+        "addNextExp": "Add next experience"
+    },
+    "categories": {
+        "nature": "Nature",
+        "food": "Food",
+        "museum": "Museum",
+        "landmark": "Landmark",
+        "event": "Event",
+        "accomodation": "Accomodation"
+    },
+    "auth": {
+        "login": "Login",
+        "password": "Password",
+        "loginMsg": "Successfully logged in!",
+        "registerMsg": "Successfully registered!",
+        "usernameRequired": "Username is required",
+        "usernameMin": "Username has to be at least 3 characters long.",
+        "passwordRequired": "Password is required",
+        "emailRequired": "Email is required.",
+        "emailCorrect": "Please enter valid email.",
+        "passwordMin": "Password has to be at least 6 characters long.",
+        "loginTitle": "Login",
+        "registerTitle": "Register"
+    },
+    "profile": {
+        "profileTitle": "My profile",
+        "changePhoto": "Change user picture",
+        "deleteAccount": "Delete account",
+        "saveChanges": "Save changes",
+        "unableToLoad": "Unable to load user data."
+    },
+    "add": {
+        "editPost": "Edit post",
+        "editJourney": "Edit journey",
+        "editExp": "Edit experience",
+        "addExp": "Add experience to ",
+        "addPost": "Add post to ",
+        "title": "Title",
+        "content": "Content",
+        "location": "Location",
+        "when": "When",
+        "rating": "Rating",
+        "category": "Category",
+        "selectCategory": "Select category...",
+        "selectJourney": "Select journey...",
+        "submit": "Submit",
+        "titleRequired": "Title is required.",
+        "titleMin": "Title has to be at least 3 characters long.",
+        "contentRequired": "Content is required.",
+        "descriptionRequired": "Description is required.",
+        "description": "Description",
+        "noCoords": "No coordinates set.",
+        "pickLocation": "Pick location",
+        "clearCoords": "Clear coordinates"
+    },
+    "image": {
+        "upload": "Upload",
+        "web": "Web",
+        "pickImg": "Pick a photo",
+        "clearImg": "Clear photo",
+        "noImg": "No image",
+        "uploadTooltip": "Upload picture from drive",
+        "findWebTooltip": "Find free photo on web"
+    },
+    "search": {
+        "placeholder": "Type in a query.",
+        "results": "Results for: ",
+        "noResults": "No {{type}} for: ",
+        "noJourneys": "journeys",
+        "noPosts": "posts",
+        "noExps": "experiences",
+        "by": "by"
+    }
+}

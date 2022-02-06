@@ -1,0 +1,121 @@
+.user-page__hero {
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.user-page__title {
+  font-size: 90px;
+  z-index: 2;
+  bottom: -5%;
+}
+
+.user-page__desc {
+  font-size: 32px;
+}
+
+.user-page__count-row {
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.user-page__profile-btn {
+  width: 180px;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.user-page__card-footer {
+  background-color: var(--clr-bg-2);
+}
+
+.user-page__card-header {
+  font-size: 14px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.user-page__fav-btn {
+  background-color: var(--clr-accent);
+  border-radius: 0.5rem !important;
+  font-size: 14px;
+  border: none;
+  color: var(--clr-font);
+}
+
+.user-page__dropdown-btn {
+  border-radius: 0;
+  width: 100%;
+  text-align: left;
+}
+.user-page__dropdown-btn:focus {
+  background-color: lightgray;
+  box-shadow: none;
+  font-weight: bold;
+}
+
+.user-page__btn-tab {
+  padding-bottom: 1rem;
+  margin-right: 1.5rem;
+  color:var(--clr-font) ;
+}
+
+.user-page__btn-tab:hover{
+  color: var(--clr-accent-2-dark);
+}
+
+.user-page__btn-tab.active {
+  font-weight: bold;
+  border-bottom: var(--clr-accent-2) solid 2px;
+}
+@media (max-width: 576px) {
+  .user-page__btn-tab {
+    padding-bottom: 1.5rem;
+    font-size: 14px;
+    margin-right: 1rem;
+  }
+
+  .user-page__btn-tab.active {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .user-page__btn-tab {
+    padding-bottom: 1.5rem;
+    font-size: 12px;
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-label {
+    font-size: 14px;
+  }
+
+  .user-page__title {
+    font-size: 12vw;
+  }
+
+  .user-page__fav-btn {
+    font-size: 12px;
+  }
+
+  .user-page__card-header {
+    font-size: 12px;
+  }
+
+  .user-page__edit-btn {
+  transform: scale(0.8);
+  }
+}
+
+@media (max-width: 460px) {
+  .user-page__profile-btn {
+    width: auto;
+    font-size: 12px;
+  }
+}
