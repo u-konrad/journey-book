@@ -150,7 +150,7 @@ const PostPage = ({ mode }) => {
               </p>
             )}
             <div className="pb-5 my-5">
-              <p style={{ whiteSpace: "pre-line" }}>{item.content}</p>
+              <p style={{ whiteSpace: "pre-line" }} className='lead'>{item.content}</p>
               <ActionButtons
                 className="d-flex justify-content-end"
                 item={item}

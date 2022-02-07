@@ -7,7 +7,7 @@ const Layout = (props) => {
   return (
     <div
       className="d-flex flex-column min-vh-100 bg-basic position-relative"
-      style={{  overflow: "hidden",paddingBottom:'100px' }}
+      style={{  overflow: "hidden" }}
     >
       <Navigation />
       <main className="">

@@ -68,7 +68,7 @@ const HomePage = () => {
   }
 
   return (
-    <div className="pt-3 mb-3">
+    <div className="pt-3  mb-5">
       <div className="position-relative">
         <img
           className="home-page__hero rounded shadow"

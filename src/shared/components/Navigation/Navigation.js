@@ -246,7 +246,7 @@ const Navigation = () => {
                   className="form-control"
                   ref={searchRef}
                   type="search"
-                  placeholder={t('shared.search')}
+                  placeholder={`${t('shared.search')}...`}
                   aria-label="Search"
                   onClick={(e) => e.stopPropagation()}
                 />

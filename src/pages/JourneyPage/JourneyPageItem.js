@@ -123,7 +123,7 @@ const JourneyPageItem = ({
           }}
           alt=''
         />
-        <p className="my-4 pe-4" style={{ whiteSpace: "pre-line" }}>
+        <p className="my-4 pe-4" style={{ whiteSpace: "pre-line", fontSize:'18px' }}>
           {item.content}
         </p>
       </div>

@@ -126,13 +126,38 @@ height: calc(100vh - 62px - var(--height-footer));
 
 footer{
   background-color: var(--clr-footer);
-  height: var(--height-footer);
   color: dimgray;
-   position: absolute;
+   /* position: absolute;
    bottom: 0;
-   left:0;
+   left:0; */
    width:100vw;
 }
+
+
+
+footer li a {
+  color: dimgray;
+  margin-right: 2rem;
+}
+
+@media screen and (max-width:768px) {
+  footer li a {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  footer li {
+    margin-bottom: 1rem;
+
+  }
+
+  
+}
+
+footer li:last-of-type a{
+  margin-right: 0;
+}
+
 
 .lang-container{
   width:80px;
@@ -145,4 +170,8 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+ul{
+  list-style: none;
 }
