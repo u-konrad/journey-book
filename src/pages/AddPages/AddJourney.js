@@ -12,6 +12,8 @@ import LoadingSpinner from "../../shared/components/LoadingSpinner/LoadingSpinne
 import ImagePicker from "../../shared/components/ImagePicker/ImagePicker";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
+import enLocale from "date-fns/locale/en-US";
+import plLocale from "date-fns/locale/pl";
 import DatePicker from "@mui/lab/DatePicker";
 import Box from "@mui/material/Box";
 import { format } from "date-fns";
@@ -23,7 +25,7 @@ const AddJourney = ({ mode }) => {
   const { token } = useContext(AuthContext);
   const { itemId } = useParams();
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [existingItem, setExistingItem] = useState(null);
   const [newPhoto, setNewPhoto] = useState(
@@ -34,6 +36,13 @@ const AddJourney = ({ mode }) => {
 
   const pageTitle =
     mode === "edit" ? t("add.editJourney") : t("shared.newJourney");
+
+  const lang = i18n.language;
+
+  const localeMap = {
+    en: enLocale,
+    pl: plLocale,
+  };
 
   useEffect(() => {
     const fetchItem = async () => {
@@ -116,7 +125,10 @@ const AddJourney = ({ mode }) => {
                 {...props}
               />
               <LocationInput {...props} setCoords={setCoords} coords={coords} />
-              <LocalizationProvider dateAdapter={AdapterDateFns}>
+              <LocalizationProvider
+                dateAdapter={AdapterDateFns}
+                locale={localeMap[lang]}
+              >
                 <div className="mb-3">
                   <label className="form-label ">{t("add.when")}</label>
                   <DatePicker
@@ -124,7 +136,8 @@ const AddJourney = ({ mode }) => {
                     label="Date"
                     value={date}
                     onChange={(newValue) => {
-                      setDate(format(newValue, "MMMM yyyy"));
+                      console.log(newValue);
+                      setDate(format(newValue, "MMMM yyyy", { locale: localeMap[lang]}));
                     }}
                     renderInput={({ inputRef, inputProps, InputProps }) => (
                       <Box sx={{ display: "flex", alignItems: "center" }}>

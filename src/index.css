@@ -180,7 +180,7 @@ ul{
 
 .notification{
   position: fixed;
-  top: var(--height-navbar);
+  top: 62px;
   left: 0;
   width: 100vw;
   z-index: 999;

@@ -1,6 +1,6 @@
 # JourneyBook
 
-A simple social media app built using the MERN stack (MongoDB, Express, Node.js, React). It allows the user to create a travel-themed blog. Inspired by TripAdvisor. 
+A simple social media website built using the MERN stack (MongoDB, Express, Node.js, React). It allows the user to create a travel-themed blog. Inspired by TripAdvisor. 
 
 ## Site
 
