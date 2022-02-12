@@ -17,6 +17,7 @@ import truncateText from "../../shared/utils/truncateText";
 import { Fab } from "@mui/material";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { BsArrowUp } from "react-icons/bs";
+import Comments from "../../shared/components/Comments";
 
 import useMediaQuery from "@mui/material/useMediaQuery";
 import JourneyPageItem from "./JourneyPageItem";
@@ -315,6 +316,7 @@ const JourneyPage = () => {
                 </Button>
               </div>
             )}
+            <Comments itemId={journeyId} itemType="journey"/>
           </Col>
 
           <CustomModal
