@@ -16,7 +16,6 @@ import enLocale from "date-fns/locale/en-US";
 import plLocale from "date-fns/locale/pl";
 import DatePicker from "@mui/lab/DatePicker";
 import Box from "@mui/material/Box";
-import { format } from "date-fns";
 import { useTranslation } from "react-i18next";
 
 const AddJourney = ({ mode }) => {
@@ -79,8 +78,12 @@ const AddJourney = ({ mode }) => {
     formData.append("location", values.location);
     formData.append("coordinates", coords);
     formData.append("content", values.content);
-    formData.append("when", date);
     formData.append("image", newPhoto);
+
+    var dateOptions = { month: "long", year: "numeric" };
+    const dateString = new Intl.DateTimeFormat(lang, dateOptions).format(date);
+    formData.append("when", dateString)
+
 
     const method = mode === "edit" ? "PATCH" : "POST";
     const api = mode === "edit" ? `items/${itemId}` : "items/new";
@@ -136,8 +139,7 @@ const AddJourney = ({ mode }) => {
                     label="Date"
                     value={date}
                     onChange={(newValue) => {
-                      console.log(newValue);
-                      setDate(format(newValue, "MMMM yyyy", { locale: localeMap[lang]}));
+                      setDate(newValue);
                     }}
                     renderInput={({ inputRef, inputProps, InputProps }) => (
                       <Box sx={{ display: "flex", alignItems: "center" }}>
