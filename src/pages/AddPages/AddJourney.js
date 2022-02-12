@@ -61,7 +61,7 @@ const AddJourney = ({ mode }) => {
       .required(t("add.titleRequired"))
       .min(3, t("add.titleMin")),
     location: Yup.string(),
-    description: Yup.string(),
+    content: Yup.string().required(t("add.descriptionRequired")),
   });
 
   const submitHandler = async (values) => {
@@ -118,7 +118,7 @@ const AddJourney = ({ mode }) => {
               <LocationInput {...props} setCoords={setCoords} coords={coords} />
               <LocalizationProvider dateAdapter={AdapterDateFns}>
                 <div className="mb-3">
-                  <label className="form-label ">{t('add.when')}</label>
+                  <label className="form-label ">{t("add.when")}</label>
                   <DatePicker
                     views={["year", "month"]}
                     label="Date"

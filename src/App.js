@@ -10,7 +10,6 @@ import { useDispatch } from "react-redux";
 import { favActions, userActions } from "./store/store";
 import React, { useEffect } from "react";
 import { setAlertWithTimeout } from "./store/alert-actions";
-import CustomToast from "./shared/components/CustomToast";
 
 
 
@@ -91,7 +90,6 @@ function App() {
       }}
     >
       <Layout>
-        <CustomToast />
         <Switch>
           <Route path="/" exact component={HomePage} />
           <Route path="/users/:userId" component={UserPage} />

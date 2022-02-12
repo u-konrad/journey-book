@@ -8,7 +8,7 @@ const FormWrapper = ({ title, journey = "", children }) => {
       ) : (
         <h1 className="mb-3 align-self-start">
           {title}
-          <span className="text-muted">{journey}</span>
+          <span className="ms-2 text-muted">{journey}</span>
         </h1>
       )}
       <Card className="shadow p-3">

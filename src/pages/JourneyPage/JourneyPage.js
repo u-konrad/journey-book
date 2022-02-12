@@ -22,8 +22,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import JourneyPageItem from "./JourneyPageItem";
 import { useTranslation } from "react-i18next";
 
-
-
 const JourneyPage = () => {
   const { journeyId } = useParams();
   const history = useHistory();
@@ -295,26 +293,28 @@ const JourneyPage = () => {
 
           <Col xl={10} xxl={8}>
             {itemsToRender}
-            <div className="d-flex flex-row mt-5">
-              <Button
-                size="lg"
-                variant="outline-primary"
-                className="me-3 btn-add-p"
-                onClick={() => history.push(`/posts/new/${journeyId}`)}
-              >
-                <i className="bi bi-plus"></i>
-                {t("journey.addNextPost")}
-              </Button>
-              <Button
-                size="lg"
-                variant="outline-success"
-                className="btn-add-e"
-                onClick={() => history.push(`/exps/new/${journeyId}`)}
-              >
-                <i className="bi bi-plus"></i>
-                {t("journey.addNextExp")}
-              </Button>
-            </div>
+            {isAuthor && (
+              <div className="d-flex flex-row mt-5">
+                <Button
+                  size="lg"
+                  variant="outline-primary"
+                  className="me-3 btn-add-p"
+                  onClick={() => history.push(`/posts/new/${journeyId}`)}
+                >
+                  <i className="bi bi-plus"></i>
+                  {t("journey.addNextPost")}
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline-success"
+                  className="btn-add-e"
+                  onClick={() => history.push(`/exps/new/${journeyId}`)}
+                >
+                  <i className="bi bi-plus"></i>
+                  {t("journey.addNextExp")}
+                </Button>
+              </div>
+            )}
           </Col>
 
           <CustomModal
