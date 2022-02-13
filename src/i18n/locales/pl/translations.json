@@ -20,7 +20,9 @@
         "accept":"Akceptuj",
         "notLoggedIn":"Najpierw musisz się zalogować.",
         "select":"Wybierz",
-        "selected":"Wybrano"
+        "selected":"Wybrano",
+        "send":"Wyślij"
+
     },
     "home": {
         "title1": "Nowe podróże",
@@ -143,5 +145,9 @@
         "noPosts":"postów",
         "noExps":"recenzji",
         "by":"napisał"
+    },
+    "comments":{
+        "writeComment":"Napisz komentarz...",
+        "logIn":"Zaloguj się aby napisać komentarz."
     }
 }

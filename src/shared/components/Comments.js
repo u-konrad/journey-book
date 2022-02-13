@@ -4,12 +4,15 @@ import { AuthContext } from "../../shared/context/auth-context";
 import Comment from "./Comment";
 import TextareaAutosize from "react-textarea-autosize";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const Comments = ({ itemId, itemType }) => {
   const { fetchData, sendItem } = useHttp();
   const [commentList, setCommentList] = useState([]);
   const [newComment, setNewComment] = useState("");
   const { userId, token } = useContext(AuthContext);
+
+  const { t } = useTranslation();
 
   const fetchComments = useCallback(async () => {
     try {
@@ -75,7 +78,7 @@ const Comments = ({ itemId, itemType }) => {
           <TextareaAutosize
             className="form-control"
             name="content"
-            placeholder="Write a comment..."
+            placeholder={t("comments.writeComment")}
             minRows={2}
             maxRows={10}
             onChange={(e) => {
@@ -86,13 +89,13 @@ const Comments = ({ itemId, itemType }) => {
           {!!newComment && (
             <div className="d-flex justify-content-end mt-2">
               <button className="btn btn-success" type="submit">
-                Send
+              {t("shared.send")}
               </button>
             </div>
           )}
         </form>
       ) : (
-        <p className="lead">Log in to write a comment.</p>
+        <p className="lead">{t("comments.logIn")}</p>
       )}
       {commentList.map((item) => {
         return <Comment comment={item} onDelete={deleteHandler} />;

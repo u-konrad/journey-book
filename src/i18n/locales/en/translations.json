@@ -20,7 +20,8 @@
         "accept": "Accept",
         "notLoggedIn": "You have to log in first.",
         "select": "Select",
-        "selected": "Selected"
+        "selected": "Selected",
+        "send":"Send"
     },
     "home": {
         "title1": "New journeys",
@@ -143,5 +144,9 @@
         "noPosts": "posts",
         "noExps": "experiences",
         "by": "by"
+    },
+    "comments":{
+        "writeComment":"Write a comment...",
+        "logIn":"Log in to write a comment."
     }
 }
