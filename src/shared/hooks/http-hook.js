@@ -18,8 +18,8 @@ const useHttp = () => {
   const [isLoading, setLoading] = useState(false);
   const activeHttpRequests = useRef([]);
 
-  const {i18n} =useTranslation();
-  const lang= i18n.language
+  const { i18n } = useTranslation();
+  const lang = i18n.language;
 
   const fetchWithTimeout = useCallback(async (resource, options = {}) => {
     const { timeout = sendDataTimeout } = options;
@@ -38,27 +38,32 @@ const useHttp = () => {
     async ({
       method = "POST",
       api = "items/new",
-      type='null',
+      type = "null",
       body = null,
       headers,
       successMsg = "Successfully created item!",
     }) => {
       setLoading(true);
       try {
-        const response = await fetchWithTimeout(url + `${api}?lang=${lang}&type=${type}`, {
-          method: method,
-          body: body,
-          headers: headers,
-        });
+        const response = await fetchWithTimeout(
+          url + `${api}?lang=${lang}&type=${type}`,
+          {
+            method: method,
+            body: body,
+            headers: headers,
+          }
+        );
         const responseData = await response.json();
         if (!response.ok) {
           throw new Error(responseData.error);
         }
 
+        const { msg } = responseData;
+
         dispatch(
           setAlertWithTimeout({
             alertType: "success",
-            alertText: successMsg,
+            alertText: msg || successMsg,
           })
         );
         setLoading(false);
@@ -74,7 +79,7 @@ const useHttp = () => {
         throw err;
       }
     },
-    [dispatch, url, fetchWithTimeout,lang]
+    [dispatch, url, fetchWithTimeout, lang]
   );
 
   const sendItem = useCallback(

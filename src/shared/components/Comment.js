@@ -5,11 +5,10 @@ import { AuthContext } from "../context/auth-context";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-const Comment = ({ comment }) => {
-  const { userId, token } = useContext(AuthContext);
+const Comment = ({ comment, onDelete }) => {
+  const { userId } = useContext(AuthContext);
   const isAuthor = comment.author?.id === userId;
 
-  const deleteHandler = () => {};
 
   return (
     <Wrapper>
@@ -25,7 +24,7 @@ const Comment = ({ comment }) => {
 
       {isAuthor && (
         <div className="d-flex justify-content-end h-25" >
-          <button className="btn btn-sm btn-outline-danger">
+          <button className="btn btn-sm btn-outline-danger" onClick={()=>onDelete(comment)}>
             <i style={{ fontSize: "12px" }} className="bi bi-trash"></i>
           </button>
         </div>

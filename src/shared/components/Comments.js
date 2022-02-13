@@ -3,6 +3,7 @@ import useHttp from "../hooks/http-hook";
 import { AuthContext } from "../../shared/context/auth-context";
 import Comment from "./Comment";
 import TextareaAutosize from "react-textarea-autosize";
+import styled from "styled-components";
 
 const Comments = ({ itemId, itemType }) => {
   const { fetchData, sendItem } = useHttp();
@@ -19,21 +20,38 @@ const Comments = ({ itemId, itemType }) => {
     } catch (err) {}
   }, [itemId, itemType]);
 
+  const deleteHandler = async (comment) => {
+    try {
+      await sendItem({
+        method: "DELETE",
+        api: `comments/${comment._id}`,
+        type: itemType,
+        body: JSON.stringify({
+          authorId: comment.author.id,
+          parentId: itemId,
+          parentType: itemType,
+        }),
+        headers: {
+          Authorization: "Bearer " + token,
+          "Content-Type": "application/json",
+        },
+      });
+      fetchComments();
+    } catch (err) {}
+  };
+
   const submitHandler = async function (event) {
     event.preventDefault();
-    const formData = new FormData();
-
-    formData.append("content", newComment);
-    formData.append("author", userId);
 
     try {
       await sendItem({
         method: "POST",
         api: `comments/${itemId}`,
         type: itemType,
-        body: formData,
+        body: JSON.stringify({ content: newComment, author: userId }),
         headers: {
           Authorization: "Bearer " + token,
+          "Content-Type": "application/json",
         },
       });
 
@@ -51,7 +69,7 @@ const Comments = ({ itemId, itemType }) => {
   }, [fetchComments]);
 
   return (
-    <div>
+    <Wrapper>
       {!!token ? (
         <form onSubmit={submitHandler}>
           <TextareaAutosize
@@ -77,10 +95,16 @@ const Comments = ({ itemId, itemType }) => {
         <p className="lead">Log in to write a comment.</p>
       )}
       {commentList.map((item) => {
-        return <Comment comment={item} />;
+        return <Comment comment={item} onDelete={deleteHandler} />;
       })}
-    </div>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div`
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid grey;
+`;
 
 export default Comments;
