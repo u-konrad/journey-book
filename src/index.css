@@ -180,7 +180,7 @@ ul{
 
 .notification{
   position: fixed;
-  top: 62px;
+  bottom: 0;
   left: 0;
   width: 100vw;
   z-index: 999;
@@ -213,7 +213,7 @@ ul{
   @keyframes showing {
     0% {
       opacity: 0;
-      transform: translateY(-100%);
+      transform: translateY(100%);
     }
     100% {
       opacity: 1;
@@ -228,6 +228,6 @@ ul{
     }
     100% {
       opacity: 0;
-      transform: translateY(-100%);
+      transform: translateY(100%);
     }
   }
