@@ -14,6 +14,7 @@ import formatDate from "../../shared/utils/formatDate";
 import { Rating } from "@mui/material";
 import CategoryLabel from "../../shared/components/CategoryLabel";
 import { useTranslation } from "react-i18next";
+import Comments from "../../shared/components/Comments";
 
 const PostPage = ({ mode }) => {
   const { itemId } = useParams();
@@ -60,9 +61,9 @@ const PostPage = ({ mode }) => {
 
   const deleteItemModalProps = {
     type: "confirm",
-    title: t('modal.deleteItemTitle'),
-    text: t('modal.deleteItemText'),
-    acceptBtnLabel: t('shared.delete'),
+    title: t("modal.deleteItemTitle"),
+    text: t("modal.deleteItemText"),
+    acceptBtnLabel: t("shared.delete"),
     acceptBtnType: "danger",
     cancelBtnType: "success",
     onAccept: () => {
@@ -113,7 +114,7 @@ const PostPage = ({ mode }) => {
               />{" "}
             </div>
             <p className="mt-3">
-              {formatDate(item.posted)}, {t('card.author')} {" "}
+              {formatDate(item.posted)}, {t("card.author")}{" "}
               <Link className="card-link" to={`/users/${item.author}`}>
                 {item.authorName}
               </Link>
@@ -150,7 +151,9 @@ const PostPage = ({ mode }) => {
               </p>
             )}
             <div className="pb-5 my-5">
-              <p style={{ whiteSpace: "pre-line" }} className='lead'>{item.content}</p>
+              <p style={{ whiteSpace: "pre-line" }} className="lead">
+                {item.content}
+              </p>
               <ActionButtons
                 className="d-flex justify-content-end"
                 item={item}
@@ -181,6 +184,7 @@ const PostPage = ({ mode }) => {
                 ref={map}
               />
             )}
+            <Comments itemId={itemId} itemType={mode} />
           </Col>
           <CustomModal show={showModal} {...deleteItemModalProps} />
         </Fragment>

@@ -66,7 +66,7 @@ const ItemCard = ({ item }) => {
         )}
       </div>
       <div
-        style={{ fontSize: "14px", backgroundColor: "var(--clr-bg-2)" }}
+        style={{ fontSize: "14px"}}
         className="d-flex justify-content-between"
       >
         <span>
