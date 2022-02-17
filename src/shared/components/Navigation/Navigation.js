@@ -25,7 +25,7 @@ const Navigation = () => {
   const handleShow = () => setShow(true);
 
   return (
-    <Navbar collapseOnSelect style={{ zIndex: "9999" }} expand={false}>
+    <Navbar collapseOnSelect style={{ zIndex: "99" }} expand={false}>
       <Container fluid="xl" className="px-lg-5 px-sm-3">
         <Navbar.Brand
           style={{ margin: 0, cursor: "pointer" }}
