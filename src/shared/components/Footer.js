@@ -17,13 +17,13 @@ const Footer = () => {
             <Link to="/">{t("nav.home")}</Link>
           </li>
           <li>
-            <Link to="/">{t("shared.search")}</Link>
+            <Link to="/search">{t("shared.search")}</Link>
           </li>
           <li>
-            <Link to="/">{t("shared.login")}</Link>
+            <Link to="/login">{t("shared.login")}</Link>
           </li>
           <li>
-            <Link to="/">{t("shared.register")}</Link>
+            <Link to="/register">{t("shared.register")}</Link>
           </li>
         </ul>
         <p className="text-center ">

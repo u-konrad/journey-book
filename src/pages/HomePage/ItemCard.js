@@ -1,8 +1,6 @@
 import truncateText from "../../shared/utils/truncateText";
 import transformImgUrl from "../../shared/utils/transformImgUrl";
-import formatDate from "../../shared/utils/formatDate";
 import { Link, useHistory } from "react-router-dom";
-import { Card } from "react-bootstrap";
 import CategoryLabel from "../../shared/components/CategoryLabel";
 import { Rating } from "@mui/material";
 import { useTranslation } from "react-i18next";

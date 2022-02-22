@@ -32,7 +32,8 @@
   --clr-accent-2-dark: #8b6401;
   --clr-font: black;
   --clr-font-2: rgb(78, 78, 78);
-  --height-footer:56px;
+  --height-footer:142px;
+  --height-navbar:62px;
   --ff-primary: 'poppins',-apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

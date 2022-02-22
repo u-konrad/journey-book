@@ -1,29 +1,32 @@
-
 .check-btn .btn-outline-primary:hover {
   background-color: #61a0ffd2;
 }
 
-.search-item-card .card-pic{
-    width: 200px;
-    height: 130px;
-    object-fit: cover;
+.search-page {
+  min-height: calc(100vh - var(--height-footer) - var(--height-navbar) - 96px);
 }
 
-.search-item-card:hover{
-background-color: var(--clr-bg-2);
+.search-item-card .card-pic {
+  width: 200px;
+  height: 130px;
+  object-fit: cover;
 }
 
-@media (max-width:992px){
-    .search-item-card .card-pic{
-        width: 100px;
-        height: 100px;
-    }
+.search-item-card:hover {
+  background-color: var(--clr-bg-2);
+}
 
-    .search-item-card.card-title{
-        font-size: 16px;
-    }
+@media (max-width: 992px) {
+  .search-item-card .card-pic {
+    width: 100px;
+    height: 100px;
+  }
 
-    .search-item-card .card-text{
-        font-size: 14px;
-    }
+  .search-item-card.card-title {
+    font-size: 16px;
+  }
+
+  .search-item-card .card-text {
+    font-size: 14px;
+  }
 }

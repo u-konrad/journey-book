@@ -108,12 +108,12 @@ const SearchPage = () => {
     });
 
   return (
-    <Col lg={12} xl={10} xxl={8} className="me-auto ms-auto mb-5 mt-5">
+    <Col lg={12} xl={10} xxl={8} className="search-page me-auto ms-auto mb-5 mt-5">
       <Card className="my-4 py-3">
         <div>
           <SearchInput
             query={query}
-            formClassName="ms-5 m-3 col-lg-8"
+            formClassName="ms-lg-5 m-3 col-lg-8"
             onQueryChange={(event) => setQuery(event.target.value)}
             onQuerySubmit={(event) => {
               event.preventDefault();
@@ -121,7 +121,7 @@ const SearchPage = () => {
             }}
           />
 
-          <div className="d-flex ms-5">
+          <div className="d-flex ms-3 ms-lg-5">
             <CheckButton
               type="journey"
               typeName={t("user.journeys")}

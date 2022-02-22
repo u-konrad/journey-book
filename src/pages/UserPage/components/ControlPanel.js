@@ -54,7 +54,7 @@ const ControlPanel = ({
           <SmallUserPanel {...{ userData, isAuthor }} />
 
           <div className="mt-4 d-flex justify-content-between align-items-center flex-wrap">
-            <div>
+            <div className="mb-2 ">
               <NavLink className="user-page__btn-tab" to={url} exact>
                 {t("user.latest")}
               </NavLink>
@@ -69,7 +69,7 @@ const ControlPanel = ({
               </NavLink>
             </div>
             {isAuthor && (
-              <Dropdown className="d-inline d-lg-none">
+              <Dropdown className="d-inline d-lg-none ">
                 <Dropdown.Toggle
                   className="user-page__fav-btn"
                   variant="dark"
