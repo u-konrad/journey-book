@@ -48,8 +48,6 @@ const HomePage = () => {
     );
   }, [fetchLatestData]);
 
-  throw(new Error('error'))
-
 
   let postsToRender;
   if (postList) {
