@@ -33,6 +33,8 @@ const HomePage = () => {
     [fetchData]
   );
 
+
+
   useEffect(() => {
     fetchLatestData({ type: "post", page: 0, size: 18 }).then((items) =>
       setPostList(items)
@@ -45,6 +47,9 @@ const HomePage = () => {
       setExpList(items)
     );
   }, [fetchLatestData]);
+
+  throw(new Error('error'))
+
 
   let postsToRender;
   if (postList) {

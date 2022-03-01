@@ -9,11 +9,13 @@ import store from "./store/store";
 import { Suspense } from "react";
 import LoadingSpinner from "./shared/components/LoadingSpinner/LoadingSpinner";
 import './i18n/config';
+import ErrorBoundary from './shared/ErrorBoundary'
 
 
 
 ReactDOM.render(
   <React.StrictMode>
+    <ErrorBoundary>
     <Provider store={store}>
       <BrowserRouter>
       <Suspense fallback={<LoadingSpinner asOverlay/>}>
@@ -21,6 +23,7 @@ ReactDOM.render(
         </Suspense>
       </BrowserRouter>
     </Provider>
+    </ErrorBoundary>
   </React.StrictMode>,
   document.getElementById("root")
 );
