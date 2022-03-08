@@ -17,9 +17,6 @@ const HomePage = () => {
 
   const history = useHistory();
 
-  const postRef = createRef();
-  const journeyRef = createRef();
-  const expRef = createRef();
 
   const fetchLatestData = useCallback(
     async ({ type, page = "", size = "" }) => {

@@ -6,6 +6,8 @@ A simple social media website built using the MERN stack (MongoDB, Express, Node
 
 Here is a link to the site: [https://journey-book.web.app/](https://journey-book.web.app/)
 
+Backend repo: [https://github.com/u-konrad/journey-book-backend](https://github.com/u-konrad/journey-book-backend)
+
 ![Home page](./src/img/jb-1.jpg)
 
 ## Table of contents

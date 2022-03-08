@@ -6,15 +6,12 @@ import FormWrapper from "../../shared/components/FormWrapper";
 import { Button } from "react-bootstrap";
 import { AuthContext } from "../../shared/context/auth-context";
 import { useContext } from "react";
-import { useDispatch } from "react-redux";
-import { setAlertWithTimeout } from "../../store/alert-actions";
 import { useTranslation } from "react-i18next";
 import useHttp from "../../shared/hooks/http-hook";
 
 const RegisterPage = () => {
   const history = useHistory();
   const { login } = useContext(AuthContext);
-  const dispatch = useDispatch();
   const { t } = useTranslation();
 
   const { sendItem } = useHttp();
