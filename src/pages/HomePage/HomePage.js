@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, createRef } from "react";
+import { useState, useEffect, useCallback} from "react";
 import SearchInput from "../../shared/components/SearchInput";
 import useHttp from "../../shared/hooks/http-hook";
 import { useHistory } from "react-router-dom";
