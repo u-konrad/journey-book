@@ -41,8 +41,6 @@ const Wrapper = styled.div`
   align-items: flex-end;
   padding: 2rem 0 0.5rem 0;
 
-
-
 `;
 
 export default Comment;
