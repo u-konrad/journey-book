@@ -22,6 +22,7 @@ const AddExp = ({ mode }) => {
   const { journeyId, itemId } = useParams();
 
   const { t } = useTranslation();
+  
 
   const [rating, setRating] = useState(0);
   const [existingItem, setExistingItem] = useState(null);
